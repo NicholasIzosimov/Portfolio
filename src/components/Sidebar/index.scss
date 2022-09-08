@@ -1,5 +1,5 @@
 .nav-bar {
-    background: wheat;
+    background: rgb(0, 0, 0);
     display: flex;
     width: 150px;
     min-width: 60px;
@@ -29,7 +29,8 @@
     width: 100%;
     text-align: center;
     font-size: 24px;
-    color: black;
+    color: rgb(181, 181, 181);
+    text-decoration: none;
 }
 
 .nav-bar-divider {
@@ -40,6 +41,7 @@
 .nav-icons {
     display: block;
     text-align: center;
+    justify-content: center;
     position: absolute;
     height: 210px;
     width: 100%;
@@ -52,16 +54,31 @@
         display: block;
         line-height: 51px;
         position: relative;
-
+        transition: transform .2s;
         text-decoration: none;
 
         i {
             transition: all 0.3s ease-out;
         }
     }
-
+    
 }
 
 .nav-icons a:hover {
-    background-color: rgb(210, 210, 210);
+    background-color: rgb(194, 194, 194);
+    transform: scale(1.05);
+}
+
+.platform-box {
+    background-color: red;
+    img {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+.platform-list {
+    display: flex;
+    background-color: white;
+    margin: auto;
 }
