@@ -1,0 +1,62 @@
+.stack-images img {
+    height: 80px;
+    width: 80px;
+    margin: 10px 10px 10px;
+    border: hidden;
+}
+
+img:hover {
+    animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
+    backface-visibility: hidden;
+    perspective: 1000px;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+@keyframes shake {
+
+    10% {
+        transform: translate3d(-1px, 0, 0);
+        transform: rotate(1deg);
+    }
+
+    20% {
+        transform: translate3d(2px, 0, 0);
+        transform: rotate(-2deg);
+
+    }
+
+    30% {
+        transform: translate3d(-1px, 0, 0);
+        transform: rotate(1deg);
+    }
+
+    40% {
+        transform: translate3d(1px, 0, 0);
+        transform: rotate(0deg);
+
+    }
+}
+
+.container {
+    display: flex;
+    margin-left: 150px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular',
+        'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 20px;
+}
+
+.home-page {
+    .text-zone {
+        position: absolute;
+        width: 30%;
+        max-height: 90%;
+        padding: 20px;
+        overflow: hidden;
+    }
+
+    h1 {
+        font-weight: 400;
+        color: rgb(190, 190, 190);
+    }
+}
