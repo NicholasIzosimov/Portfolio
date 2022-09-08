@@ -8,6 +8,7 @@
     top: 0;
     z-index: 3;
     min-height: 500px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .logo {
@@ -31,6 +32,7 @@
     font-size: 24px;
     color: rgb(181, 181, 181);
     text-decoration: none;
+    font-family: "La Belle Aurore";
 }
 
 .nav-bar-divider {
@@ -61,16 +63,20 @@
             transition: all 0.3s ease-out;
         }
     }
-    
+
 }
 
 .nav-icons a:hover {
-    background-color: rgb(194, 194, 194);
+    background-color: rgb(123, 123, 123);
     transform: scale(1.05);
+    color: black;
 }
 
 .platform-box {
-    background-color: red;
+    flex-direction: column;
+    width: 130%;
+    margin-left: -35px;
+
     img {
         width: 50px;
         height: 50px;
@@ -79,6 +85,7 @@
 
 .platform-list {
     display: flex;
-    background-color: white;
     margin: auto;
+    align-items: center;
+    list-style: none
 }
