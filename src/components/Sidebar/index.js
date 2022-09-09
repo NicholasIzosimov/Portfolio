@@ -1,6 +1,6 @@
 import './index.scss'
 import { Link, NavLink } from 'react-router-dom'
-import LogoN from '../../assets/images/logo-n.png'
+import LogoN from '../../assets/images/ni.jpeg'
 import linkedin from '../../assets/images/linkedin.png'
 import github from '../../assets/images/github.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -9,6 +9,7 @@ import { faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons'
 const Sidebar = () => (
     <>
     <div className='top-header'>Nicholas Izosimov</div>
+    <div className='right-header'>Hello</div>
         <div className="nav-bar">
             <div className="logo">
                 <Link to='/'>

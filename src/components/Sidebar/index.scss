@@ -73,13 +73,17 @@
 
 .platform-box {
     flex-direction: column;
-    width: 130%;
-    margin-left: -35px;
+    width: 120%;
+    height: fit-content;
 
     img {
         width: 50px;
         height: 50px;
     }
+}
+.platform-box a{
+    height: 100px;
+    transform: translateX(2%);
 }
 
 .platform-list {
@@ -91,7 +95,10 @@
 
 .top-header {
     background-color: black;
+    width: 100%;
     padding: 20px;
     color: wheat;
     text-align: center;
+    padding-right: 100px;
+
 }

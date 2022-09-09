@@ -11,12 +11,64 @@ import typescript from '../../assets/images/typescript.png'
 const Home = () => {
     return (
         <>
+            <div class="checkerboard">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
             <div className="container home-page">
                 <div className="text-zone">
                     <h1>Hello, 👋
                         <br /> I'm Nicholas.
                         <br /> I am a full stack developer<br />
-                        <br /> These are some of the stacks
+                        <br />These are some of the technologies
                         <br />that I've worked with before<br />
                         <div className='stack-images'>
                             <a target="_blank" href="https://www.javascript.com/">

@@ -40,23 +40,78 @@ img:hover {
 
 .container {
     display: flex;
-    margin-left: 150px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular',
         'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding: 20px;
+    margin-left: 150px;
 }
 
 .home-page {
     .text-zone {
-        position: absolute;
-        width: 30%;
-        max-height: 90%;
+        position: relative;
+        background-color: #2f2f2f;
+        width: 50%;
+        max-height: 600px;
         padding: 20px;
         overflow: hidden;
+        animation: fadeIn 0.5s;
+        transform: translateX(40%);
+        text-align: center;
     }
 
     h1 {
         font-weight: 400;
         color: rgb(190, 190, 190);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+// ----
+$columns: 7;
+$rows: 7;
+$cells: $columns * $rows;
+
+@for $i from 1 through $cells {
+    .checkerboard>div:nth-child(#{$i}) {
+        animation-delay: (random($cells) / $columns) + s;
+    }
+}
+
+.checkerboard {
+    animation: fadeIn 5s;
+    display: grid;
+    position: absolute;
+    transform: translateY(-2%);
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    height: 100vh;
+    width: 100%;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+    .checkerboard>div {
+        animation-name: poof;
+        animation-duration: 0.01s;
+        animation-fill-mode: forwards;
+        background: #fff;
+    }
+
+    .checkerboard>div:nth-child(even) {
+        background: #2f2f2f;
+    }
+}
+
+@keyframes poof {
+    to {
+        opacity: 0;
     }
 }

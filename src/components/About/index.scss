@@ -1,25 +1,289 @@
-.text-zone h1{
+.container-about-page {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    justify-content: space-around;
+    animation: fadeIn 1s;
+    transform: translateX(130px);
+}
+
+.projects-grid {
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+    padding-bottom: 100px;
+}
+
+.text-zone h1 {
     color: rgb(190, 190, 190);
     font-family: 'Lucida Sans', 'Lucida Sans Regular',
         'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        font-weight: 400;
+    font-weight: 400;
 }
 
 .project-list {
     list-style: none;
 }
+
 .project-list-item {
-    display: flex;
-    width: 300px;
-    justify-content: center;
+    min-width: 300px;
+    max-width: 500px;
     color: rgb(0, 0, 0);
     padding: 20px;
     font-size: 30px;
     background-color: wheat;
     border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 10vh;
+    transform: translateY(5%);
 }
+
 .project-images {
     display: flex;
     width: 80px;
     height: 80px;
+    background-color: black;
+    border-radius: 100%;
+    position: static;
+    margin-right: 20px;
+}
+
+a:hover {
+    transition: transform 0.2s;
+    transform: scale(1.05) translateY(10%);
+}
+
+.project-list p {
+    color: wheat;
+}
+
+.created {
+    margin-left: 30px;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.body-bird:hover {
+    transition: transform 0.2s;
+    transform: scale(1.05) translateY(10%);
+}
+
+//-----------
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --body: #ff533e;
+    --mouth: #000000;
+    --feather: #939393;
+    --beak-top: #e9581a;
+    --beak-down: #aa4c21;
+    --leg: #00adef;
+    --body-color: #e3edf7;
+}
+
+.body-bird {
+    background: var(--body-color);
+    font-family: sans-serif;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-bird {
+    width: 200px;
+    height: 200px;
+    transform: translate3d(250px, 500px, 250px);
+    position: absolute;
+}
+
+.body-bird,
+.mouth,
+.feather,
+.tail,
+.beak,
+.mouth::before,
+.mouth::after,
+.leg,
+.leg::after,
+.leg::before {
+    position: absolute;
+}
+
+.body-bird,
+.mouth,
+.feather,
+.beak,
+.mouth::before,
+.mouth::after {
+    border-radius: 50%;
+}
+
+.body-bird {
+    top: 26px;
+    left: 50px;
+    height: 180px;
+    width: 200px;
+    transform: rotate(-17deg);
+    background: linear-gradient(to bottom, transparent 0%, transparent 20%, var(--body) 20%);
+    z-index: 2;
+}
+
+.mouth {
+    background: var(--mouth);
+    top: 20px;
+    left: -100px;
+    width: 100px;
+    height: 100px;
+    transform: rotate(-17deg);
+    z-index: 5;
+    animation: animate-mouth 1.5s forwards;
+}
+
+@keyframes animate-mouth {
+    100% {
+        left: 175px;
+    }
+}
+
+.mouth::before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    background: white;
+    position: absolute;
+    top: 20px;
+    left: 40px;
+}
+
+.mouth::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: black;
+    position: absolute;
+    top: 30px;
+    left: 55px;
+    animation: animate-eye 1s infinite;
+    animation-delay: 4s;
+}
+
+@keyframes animate-eye {
+    50% {
+        height: 5px;
+    }
+}
+
+
+.feather {
+    z-index: 4;
+    left: 44px;
+    top: -206px;
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(to bottom, transparent 0%, transparent 50%, var(--feather) 50%);
+    transform: rotate(-17deg);
+    animation: animate-feather 1.5s forwards;
+    animation-delay: 2s;
+}
+
+@keyframes animate-feather {
+    100% {
+        top: -6px;
+    }
+}
+
+.tail {
+    width: 150px;
+    height: 60px;
+    background-color: var(--mouth);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%);
+    top: 92px;
+    left: 324px;
+    transform: rotate(-17deg);
+    z-index: 3;
+    animation: animate-tail 1.5s forwards;
+    animation-delay: 2s;
+}
+
+@keyframes animate-tail {
+    100% {
+        left: -24px;
+    }
+}
+
+.beak {
+    height: 100px;
+    width: 100px;
+    background: linear-gradient(to bottom, var(--beak-top) 0%, var(--beak-top) 15%, transparent 15%);
+    left: 224px;
+    top: 240px;
+    z-index: -1;
+    transform: rotate(-17deg);
+    animation: animate-beak 1.5s forwards;
+    animation-delay: 2s;
+}
+
+@keyframes animate-beak {
+    100% {
+        top: 40px;
+    }
+}
+
+.leg {
+    background: var(--leg);
+    height: 50px;
+    width: 10px;
+    border-radius: 10px;
+    top: 515px;
+    left: 125px;
+    transform: rotate(-15deg);
+    z-index: 1;
+    animation: animate-leg 1.5s forwards;
+    animation-delay: 2s;
+}
+
+@keyframes animate-leg {
+    100% {
+        top: 215px;
+    }
+}
+
+.leg::before {
+    bottom: -8px;
+    content: "";
+    width: 40px;
+    height: 9px;
+    background: var(--leg);
+    border-radius: 10px;
+    transform: rotate(15deg);
+    z-index: -1;
+}
+
+.leg::after {
+    top: -8px;
+    content: "";
+    width: 30px;
+    height: 9px;
+    background: var(--leg);
+    border-radius: 10px;
+    transform: rotate(-15deg);
+    z-index: -1;
 }
