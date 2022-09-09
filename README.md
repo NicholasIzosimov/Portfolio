@@ -1,6 +1,9 @@
 Code for the portfolio app.
 Mainly using react for this web application.
 
+In order to run this code, git clone it into your IDE then run "npm i", 
+once necessary packages are installed run the command "npm start"
+
 More about react:
 ________________
 Getting Started with Create React App
