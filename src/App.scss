@@ -2,6 +2,7 @@ $primary-color: #ffd700;
 
 @import 'animate.css';
 
+
 @font-face {
     font-family: 'La Belle Aurore';
     src: url('./assets/fonts/LaBelleAurore.woff2') format('woff2');
@@ -20,4 +21,14 @@ $primary-color: #ffd700;
 input,
 textarea {
     font-family: 'Helvetica Neue';
+}
+html {
+    margin: 0;
+    padding: 0;
+  }
+body {
+  margin: 0px;
+  height: 100%;
+  width: 100%;
+  position: relative;
 }

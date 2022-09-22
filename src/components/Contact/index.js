@@ -1,4 +1,5 @@
 import './index.scss'
+import '../../Sizing.scss'
 import { useEffect, useState, useRef } from 'react'
 import emailjs from '@emailjs/browser'
 
@@ -38,7 +39,7 @@ const Contact = () => {
             </div>
             <div className='container-contact-page'>
                 <div>
-                    <form ref={refForm} onSubmit={sendEmail}>
+                    <form className="container-form" ref={refForm} onSubmit={sendEmail}>
                         <ul>
                             <li className='half'>
                                 <input type="text" name="name" placeholder='Name' required />

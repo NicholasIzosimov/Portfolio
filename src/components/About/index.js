@@ -1,10 +1,11 @@
 import './index.scss'
+import '../../Sizing.scss'
 import saltventure from '../../assets/images/saltventure.png'
 
 const About = () => {
     return (
         <>
-            <body translate="no">
+            <div translate="no">
                 <div class="container-bird">
                     <div class="body-bird"></div>
                     <div class="mouth"></div>
@@ -13,15 +14,25 @@ const About = () => {
                     <div class="tail"></div>
                     <div class="leg"></div>
                 </div>
-            </body>
+            </div>
             <div className="container-about-page">
                 <div className="projects-grid">
                     <div className="text-zone">
                         <h1>
                             Projects that I've created
                         </h1>
-                        <a target="_blank" className='project-list-item' href='https://saltventure.github.io/'>
-                            <img className="project-images" src={saltventure} />Salt Venture</a>
+                        <div className='toggle-div'>
+                            <a target="_blank" className='project-list-item' href='https://saltventure.github.io/'>
+                                <img className="project-images" src={saltventure} />Salt Venture</a>
+                            <p className='project-description'>Salt Venture is an application made as a final project for the salt bootcamp
+                                <br />It's a gambling platform that does not involve real currencies and instead you play for points.</p>
+                        </div>
+                        <div className='toggle-div'>
+                            <a target="_blank" className='project-list-item' href='https://github.com/NicholasIzosimov/puppiesFullstack'>
+                                Dogalogue</a>
+                            <p className='project-description'>Dogalogue is a full stack application made for learning purposes.
+                                <br />It's an application which allows you to add, update and remove dogs from a list. The application then also displays a random picture of that breed</p>
+                        </div>
                     </div>
                 </div>
                 <div className="projects-grid">
