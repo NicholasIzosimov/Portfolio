@@ -7,28 +7,26 @@ import github from '../../assets/images/github.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons'
 
-const Sidebar = () => (
+const Resized = () => (
     <>
-    <div className='top-header'>Nicholas Izosimov</div>
-        <div className="nav-bar">
-            <div className="logo">
+        <div className="resized-bar">
+            <div className="logo-resized">
                 <Link to='/'>
-                    <img className='logo-img' src={LogoN} alt="logo" />
+                    <img className='logo-img-rezised' src={LogoN} alt="logo" />
                 </Link>
-                <p className="sub-logo">Nicholas Izosimov</p>
             </div>
-            <nav className='nav-icons'>
+            <nav className='nav-icons-rezised'>
                 <NavLink exact='true' activeclassname='active' to='/'>
                     <FontAwesomeIcon icon={faHome} color='#4d4d4e' /> Home
                 </NavLink>
-                <NavLink exact='true' activeclassname='active' className="about-link" to='/about'>
+                <NavLink exact='true' activeclassname='active' className="about-link-rezised" to='/about'>
                     <FontAwesomeIcon icon={faUser} color='#4d4d4e' /> About
                 </NavLink>
-                <NavLink exact='true' activeclassname='active' className="contact-link" to='/contact'>
+                <NavLink exact='true' activeclassname='active' className="contact-link-rezised" to='/contact'>
                     <FontAwesomeIcon icon={faEnvelope} color='#4d4d4e' /> Email
                 </NavLink>
-                <ul className='platform-list'>
-                    <li className='platform-box'>
+                <ul className='platform-list-rezised'>
+                    <li className='platform-box-rezised'>
                         <a target="_blank" rel='noreferrer' href='https://www.linkedin.com/in/nicholas-izosimov-43874a158/'>
                             <img src={linkedin} color="#4d4d4e" alt="LinkedIn" />
                             <p>LinkedIn</p>
@@ -44,4 +42,4 @@ const Sidebar = () => (
     </>
 )
 
-export default Sidebar
+export default Resized

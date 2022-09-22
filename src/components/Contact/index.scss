@@ -3,6 +3,13 @@ h1 {
     color: rgb(190, 190, 190);
 }
 
+.container-form {
+}
+
+.container-form li{
+    width: 100%;
+}
+
 @keyframes fadeIn {
     0% {
         opacity: 0;
@@ -14,12 +21,15 @@ h1 {
 }
 
 .container-contact-page {
+    display: flex;
     animation: fadeIn 1s;
-    transform: translateX(40%);
+    justify-content: center;
 }
+
 .text-zone-contact-page {
     text-align: center;
-    transform: translateX(1%);
+    margin-top: 15px;
+    width: 100%;
 }
 
 ul {
@@ -44,7 +54,6 @@ li {
 }
 
 li.half {
-    width: 49%;
     clear: none;
 }
 
@@ -58,7 +67,14 @@ input[type='email'] {
     font-size: 16px;
     padding: 0 20px;
     box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid rgba(245, 222, 179, 0.307);
 }
+
+input:focus {
+    border-bottom: 1px solid wheat;
+}
+
 textarea {
     width: 400px;
     min-height: 100px;
@@ -69,6 +85,7 @@ textarea {
     background-color: #505050;
     box-sizing: border-box;
 }
+
 .flat-button {
     margin-left: 100px;
     color: #a3a3a3;
@@ -81,6 +98,7 @@ textarea {
     border-radius: 4px;
     animation: anime 3s infinite alternate;
 }
+
 .flat-button:hover {
     transition: all 0.3s ease-out;
     background-color: wheat;
