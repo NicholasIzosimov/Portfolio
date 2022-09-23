@@ -5,22 +5,24 @@ import saltventure from '../../assets/images/saltventure.png'
 const About = () => {
     return (
         <>
-            <div translate="no">
-                <div class="container-bird">
-                    <div class="body-bird"></div>
-                    <div class="mouth"></div>
-                    <div class="beak"></div>
-                    <div class="feather"></div>
-                    <div class="tail"></div>
-                    <div class="leg"></div>
-                </div>
-            </div>
+                        <div translate="no">
+                            <div class="container-bird">
+                                <div class="body-bird"></div>
+                                <div class="mouth"></div>
+                                <div class="beak"></div>
+                                <div class="feather"></div>
+                                <div class="tail"></div>
+                                <div class="leg"></div>
+                            </div>
+                        </div>
             <div className="container-about-page">
                 <div className="projects-grid">
                     <div className="text-zone">
                         <h1>
                             Projects that I've created
                         </h1>
+                        
+
                         <div className='toggle-div'>
                             <a target="_blank" className='project-list-item' href='https://saltventure.github.io/'>
                                 <img className="project-images" src={saltventure} />Salt Venture</a>

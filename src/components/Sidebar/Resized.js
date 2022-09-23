@@ -9,7 +9,7 @@ import { faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons'
 
 const Resized = () => (
     <>
-        <div className="resized-bar">
+        {/* <div className="resized-bar">
             <div className="logo-resized">
                 <Link to='/'>
                     <img className='logo-img-rezised' src={LogoN} alt="logo" />
@@ -38,7 +38,7 @@ const Resized = () => (
                     </li>
                 </ul>
             </nav>
-        </div>
+        </div> */}
     </>
 )
 
