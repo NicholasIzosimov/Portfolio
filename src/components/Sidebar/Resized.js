@@ -9,7 +9,7 @@ import { faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons'
 
 const Resized = () => (
     <>
-        {/* <div className="resized-bar">
+        <div className="resized-bar">
             <div className="logo-resized">
                 <Link to='/'>
                     <img className='logo-img-rezised' src={LogoN} alt="logo" />
@@ -25,8 +25,8 @@ const Resized = () => (
                 <NavLink exact='true' activeclassname='active' className="contact-link-rezised" to='/contact'>
                     <FontAwesomeIcon icon={faEnvelope} color='#4d4d4e' /> Email
                 </NavLink>
-                <ul className='platform-list-rezised'>
-                    <li className='platform-box-rezised'>
+                <ul className='platform-list-resized'>
+                    <li className='platform-box-resized'>
                         <a target="_blank" rel='noreferrer' href='https://www.linkedin.com/in/nicholas-izosimov-43874a158/'>
                             <img src={linkedin} color="#4d4d4e" alt="LinkedIn" />
                             <p>LinkedIn</p>
@@ -38,7 +38,7 @@ const Resized = () => (
                     </li>
                 </ul>
             </nav>
-        </div> */}
+        </div>
     </>
 )
 

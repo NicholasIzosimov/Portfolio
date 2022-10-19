@@ -5,7 +5,14 @@ import saltventure from '../../assets/images/saltventure.png'
 const About = () => {
     return (
         <>
-                        <div translate="no">
+            <div className="container-about-page">
+                <div className="projects-grid">
+                    <div className="text-zone">
+                        <h1>
+                            Projects that I've created
+                        </h1>
+
+                        {/* <div translate="no">
                             <div class="container-bird">
                                 <div class="body-bird"></div>
                                 <div class="mouth"></div>
@@ -14,14 +21,8 @@ const About = () => {
                                 <div class="tail"></div>
                                 <div class="leg"></div>
                             </div>
-                        </div>
-            <div className="container-about-page">
-                <div className="projects-grid">
-                    <div className="text-zone">
-                        <h1>
-                            Projects that I've created
-                        </h1>
-                        
+                        </div> */}
+
 
                         <div className='toggle-div'>
                             <a target="_blank" className='project-list-item' href='https://saltventure.github.io/'>
@@ -34,6 +35,11 @@ const About = () => {
                                 Dogalogue</a>
                             <p className='project-description'>Dogalogue is a full stack application made for learning purposes.
                                 <br />It's an application which allows you to add, update and remove dogs from a list. The application then also displays a random picture of that breed</p>
+                        </div>
+                        <div className='toggle-div'>
+                            <a target="_blank" className='project-list-item' href='https://github.com/NicholasIzosimov/katacollection'>
+                                Kata Collection</a>
+                            <p className='project-description'>A collection of katas solved by me in order to learn more!</p>
                         </div>
                     </div>
                 </div>
