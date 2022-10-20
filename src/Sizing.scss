@@ -1,5 +1,9 @@
 @media only screen and (max-width: 750px) {
 
+    .container-contact-page {
+        margin-top: 50px;
+    }
+
     .nav-bar {
         display: none !important;
     }
@@ -49,31 +53,51 @@
             margin-left: 10px;
         }
     }
+    .dropdown {
+        background-color: red;
+        display: none;
+    }
+    .dropdown-active {
+        display: block;
+        height: 100vh;
+    }
 
     .top-header {
         display: none !important;
     }
-    .nav-icons-resized {
-        background-color: rgb(255, 0, 255 ) !important;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        width: 200px;
-        height: 2000px;
-    }
-    .platform-box-resized {
-        display: flex;
-        flex-direction: row;
-        width: 100px;
-        height: 100px;
-    }
+    
     .platform-list-resized {
-        width: 100px;
-        height: 100px;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        width: 75px;
+        text-align: center;
+        height: 100vh;
+        background-color: black;
+        border: 1px wheat solid;
+        border-top: 0;
+        margin-top: 74px;
+        color: white;
+        margin-left: 70%;
         img {
             width: 50px;
             height: 50px;
         }
+    }
+    .toggle-button {
+        display: flex;
+        border: 0;
+        height: 100%;
+        width: 100px;
+        position: absolute;
+        text-align: center;
+        margin-left: 90%;
+        background-color: black;
+        color: white;
+    }
+    .toggle-button:hover {
+        cursor: pointer;
+        opacity: 70%;
     }
 }
 
