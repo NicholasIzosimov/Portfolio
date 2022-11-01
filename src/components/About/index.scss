@@ -32,7 +32,7 @@
 }
 
 .project-list-item {
-    min-width: 200px;
+    min-width: 10px;
     min-height: 100px;
     max-width: 500px;
     color: white;
@@ -48,8 +48,7 @@
     position: relative;
 }
 
-.project-grid div {
-}
+.project-grid div {}
 
 .project-images {
     display: flex;
@@ -94,7 +93,13 @@
 }
 
 .toggle-div:hover p {
-    display: block;
+    display: flex;
+}
+
+.toggle-div {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
 }
 
 @keyframes fadeIn {
@@ -142,7 +147,7 @@
 .container-bird {
     width: 200px;
     height: 200px;
-    transform: translate3d(250px, 500px, 250px);
+    margin-top: 550px;
     position: absolute;
 }
 
