@@ -20,12 +20,10 @@ const Resized = () => {
         <>
             <div className="resized-bar">
                 <div className="logo-resized">
-                    <Link to='/'>
-                        <img className='logo-img-rezised' src={LogoN} alt="logo" />
-                    </Link>
+                    <img className='logo-img-rezised' src={LogoN} alt="logo" />
                 </div>
-                <div className={`dropdown${toggleClass}`} onClick={handleToggle}>
-                        <ul className='platform-list-resized'>  
+                    <div className={`dropdown${toggleClass}`} onClick={handleToggle}>
+                        <ul className='platform-list-resized'>
                             <li className='platform-box-resized'>
                                 <NavLink exact='true' activeclassname='active' to='/'>
                                     <FontAwesomeIcon icon={faHome} color='#4d4d4e' /> Home
@@ -46,9 +44,9 @@ const Resized = () => {
                                 </a>
                             </li>
                         </ul>
+                    </div>
                 </div>
-                <button className='toggle-button' onClick={handleToggle}>_____<br />_____<br />_____</button>
-            </div>
+                <button className='toggle-button' onClick={handleToggle}>————<br />————<br />————</button>
         </>
     )
 }
