@@ -41,6 +41,13 @@ const About = () => {
                                 Kata Collection</a>
                             <p className='project-description'>A collection of katas solved by me in order to learn more!</p>
                         </div>
+                        <div className='toggle-div'>
+                            <a target="_blank" className='project-list-item' href='https://github.com/NicholasIzosimov/katacollection'>
+                                Taxi-App Aggregator</a>
+                            <p className='project-description'>An app which through API:s gathers information about price differences
+                                for taxis in Stockholm and displays it neatly.
+                            </p>
+                        </div>
                     </div>
                 </div>
                 <div className="projects-grid">

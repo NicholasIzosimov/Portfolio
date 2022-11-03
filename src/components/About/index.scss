@@ -46,6 +46,7 @@
     border: 1px solid wheat;
     margin-top: 20px;
     position: relative;
+    text-decoration: none;
 }
 
 .project-grid div {}
@@ -94,6 +95,9 @@
 
 .toggle-div:hover p {
     display: flex;
+}
+.toggle-div p:hover {
+    display: none;
 }
 
 .toggle-div {
