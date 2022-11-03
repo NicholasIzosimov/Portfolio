@@ -4,6 +4,33 @@
         display: none !important;
     }
 
+    .text-zone-contact-page {
+        margin: 0 !important;
+    }
+
+    .nav-item {
+        display: flex;
+        flex-direction: column;
+        color: wheat;
+        text-decoration: none;
+        font-size: 20px;
+
+        :hover {
+            color: white;
+        }
+    }
+
+    .container-contact-page {
+        width: 100%;
+        display: flex;
+        justify-self: center;
+    }
+
+    .nav-img-resized {
+        display: flex;
+        align-self: center;
+    }
+
     .container-contact-page {
         margin-top: 50px;
     }
@@ -40,12 +67,14 @@
         position: absolute;
         top: 0;
         font-family: Arial, Helvetica, sans-serif;
+
     }
 
     .logo-resized {
         height: 100px;
         width: 100px;
         color: white;
+        z-index: 3;
 
         img {
             width: 70%;
@@ -62,23 +91,42 @@
     .dropdown-active {
         display: flex;
         display: block;
-        height: 100vh;
         position: absolute;
-        margin-left: 90%;
+        width: 100vh;
+        justify-content: right;
+        flex-direction: column;
+        align-self: flex-end;
+        justify-self: flex-end;
+        float: right;
+    }
+
+    .platform-box-resized {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
+        margin-top: 10px;
+
+        a {
+            margin-bottom: 50px;
+        }
     }
 
 
     .platform-list-resized {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        width: 75px;
+        width: 20%;
+        z-index: 1;
         text-align: center;
-        height: 100vh;
-        background-color: black;
-        border: 1px wheat solid;
-        border-top: 0;
+        background-color: rgb(0, 0, 0);
+        border-top: wheat solid 1px;
+        border-bottom: wheat solid 1px;
         color: white;
+        height: 50vh;
+        min-height: 500px;
+        min-width: 150px;
+        margin-top: -25px;
+        position: fixed;
+        border-radius: 10px;
 
         img {
             width: 50px;
@@ -87,12 +135,14 @@
     }
 
     .toggle-button {
-        display: flex;
         border: 0;
         position: absolute;
-        text-align: center;
-        background-color: black;
-        color: white;
+        text-align: right;
+        color: rgb(255, 255, 255);
+        background-color: rgba(245, 245, 220, 0);
+        z-index: 1;
+        margin-top: -85px;
+        width: 95%;
     }
 
     .toggle-button:hover {
@@ -101,10 +151,42 @@
     }
 }
 
+@media only screen and (max-width: 470px) {
+
+    .container-contact-page {
+        display: flex;
+        justify-content: center !important;
+        width: 100%
+    }
+
+    .container-form {
+        ul {
+            width: 230px;
+            display: flex;
+            flex-direction: column;
+            textarea {
+                width: 100%;
+            }
+            li {
+                width: 100%;
+                input {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .flat-button {
+        margin: 0 !important;
+        margin-left: 5% !important; 
+    }
+
+}
+
 @media only screen and (min-width: 750px) {
     .resized-bar {
         display: none;
     }
+
     .toggle-button {
         display: none;
     }

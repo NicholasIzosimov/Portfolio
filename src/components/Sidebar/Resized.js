@@ -22,31 +22,34 @@ const Resized = () => {
                 <div className="logo-resized">
                     <img className='logo-img-rezised' src={LogoN} alt="logo" />
                 </div>
-                    <div className={`dropdown${toggleClass}`} onClick={handleToggle}>
-                        <ul className='platform-list-resized'>
-                            <li className='platform-box-resized'>
-                                <NavLink exact='true' activeclassname='active' to='/'>
-                                    <FontAwesomeIcon icon={faHome} color='#4d4d4e' /> Home
-                                </NavLink>
-                                <NavLink exact='true' activeclassname='active' className="about-link-rezised" to='/about'>
-                                    <FontAwesomeIcon icon={faUser} color='#4d4d4e' /> About
-                                </NavLink>
-                                <NavLink exact='true' activeclassname='active' className="contact-link-rezised" to='/contact'>
-                                    <FontAwesomeIcon icon={faEnvelope} color='#4d4d4e' /> Email
-                                </NavLink>
-                                <a target="_blank" rel='noreferrer' href='https://www.linkedin.com/in/nicholas-izosimov-43874a158/'>
-                                    <img src={linkedin} color="#4d4d4e" alt="LinkedIn" />
-                                    <p>LinkedIn</p>
-                                </a>
-                                <a target="_blank" rel='noreferrer' href='https://github.com/NicholasIzosimov'>
-                                    <img src={github} color="#4d4d4e" alt="GitHub" />
-                                    <p>GitHub</p>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
                 <button className='toggle-button' onClick={handleToggle}>————<br />————<br />————</button>
+                <div className={`dropdown${toggleClass}`} onClick={handleToggle}>
+                    <ul className='platform-list-resized'>
+                        <li className='platform-box-resized'>
+                            <NavLink exact='true' activeclassname='active' to='/' className="nav-item">
+                                <FontAwesomeIcon icon={faHome} color='#4d4d4e' />
+                                <p>Home</p>
+                            </NavLink>
+                            <NavLink exact='true' activeclassname='active' className="nav-item" to='/about'>
+                                <FontAwesomeIcon icon={faUser} color='#4d4d4e' />
+                                <p>About</p>
+                            </NavLink>
+                            <NavLink exact='true' activeclassname='active' className="nav-item" to='/contact'>
+                                <FontAwesomeIcon icon={faEnvelope} color='#4d4d4e' />
+                                <p>Contact</p>
+                            </NavLink>
+                            <a className="nav-item" target="_blank" rel='noreferrer' href='https://www.linkedin.com/in/nicholas-izosimov-43874a158/'>
+                                <img className="nav-img-resized" src={linkedin} color="#4d4d4e" alt="LinkedIn" />
+                                <p>LinkedIn</p>
+                            </a>
+                            <a className="nav-item" target="_blank" rel='noreferrer' href='https://github.com/NicholasIzosimov'>
+                                <img className="nav-img-resized" src={github} color="#4d4d4e" alt="GitHub" />
+                                <p>GitHub</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </>
     )
 }
