@@ -1,6 +1,14 @@
 import './index.scss'
 import '../../Sizing.scss'
 import saltventure from '../../assets/images/saltventure.png'
+import js from '../../assets/images/javascript.png'
+import dotnet from '../../assets/images/dotnet.png'
+import csharp from '../../assets/images/csharp.png'
+import github from '../../assets/images/github.png'
+import sql from '../../assets/images/sql.png'
+import react from '../../assets/images/react.png'
+import azure from '../../assets/images/azure.png'
+import typescript from '../../assets/images/typescript.png'
 
 const About = () => {
     return (
@@ -11,19 +19,6 @@ const About = () => {
                         <h1>
                             Projects that I've created
                         </h1>
-
-                        {/* <div translate="no">
-                            <div class="container-bird">
-                                <div class="body-bird"></div>
-                                <div class="mouth"></div>
-                                <div class="beak"></div>
-                                <div class="feather"></div>
-                                <div class="tail"></div>
-                                <div class="leg"></div>
-                            </div>
-                        </div> */}
-
-
                         <div className='toggle-div'>
                             <a target="_blank" className='project-list-item' href='https://saltventure.github.io/'>
                                 <img className="project-images" src={saltventure} />Salt Venture</a>
@@ -53,15 +48,47 @@ const About = () => {
                 <div className="projects-grid">
                     <div className='text-zone'>
                         <h1 className="">
-                            My coding journey
+                            My Tech Stack
                         </h1>
-                        <div target="_blank" className='project-list-item'>
-                            <p className='about-me-text'>
-                                I'm a 21 year old living in Stockholm, Sweden. <br />
-                                I've been developing since 2021 and during the summer of 2022 I enrolled in an intensive course
-                                <br /><a target="_blank" href="https://www.salt.study/our-hubs/stockholm">{"</salt>"}</a><br />
-                                for C# .NET & Java Script in order to learn more about developing.
-                            </p>
+                        <div target="_blank" className='project-list-item stack'>
+                            <div className='tech-stack'>
+                                <br />These are some of the technologies
+                                <br />that I've worked with before<br />
+                                <div className='stack-images'>
+                                    <a target="_blank" href="https://www.javascript.com/">
+                                        <img src={js} alt="Javascript" />
+                                    </a>
+
+                                    <a target="_blank" href="https://dotnet.microsoft.com/en-us/">
+                                        <img src={dotnet} alt="dotNET" />
+                                    </a>
+
+                                    <a target="_blank" href="https://docs.microsoft.com/en-us/dotnet/csharp/">
+                                        <img src={csharp} alt="C#" />
+                                    </a>
+
+                                    <a target="_blank" href="https://github.com/">
+                                        <img src={github} alt="GitHub" />
+                                    </a>
+
+                                    <br />
+                                    <a target="_blank" href="https://www.microsoft.com/en-us/sql-server">
+                                        <img src={sql} alt="SQL" />
+                                    </a>
+
+                                    <a target="_blank" href="https://reactjs.org/">
+                                        <img src={react} alt="React" />
+                                    </a>
+
+                                    <a target="_blank" href="https://www.typescriptlang.org/">
+                                        <img src={typescript} alt="Typescript" />
+                                    </a>
+
+                                    <a target="_blank" href="https://azure.microsoft.com/en-gb/">
+                                        <img src={azure} alt="Azure" />
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
