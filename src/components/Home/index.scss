@@ -1,3 +1,43 @@
+.container.home-page {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-evenly;
+    animation: fadeIn 1s;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    margin: 0px 0px 0px;
+    margin-left: 140px;
+    margin-top: -100px;
+}
+
+.project-list-item {
+    min-width: 10px;
+    min-height: 100px;
+    max-width: 500px;
+    color: white;
+    padding: 20px;
+    font-size: 30px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid wheat;
+    position: relative;
+    text-decoration: none;
+}
+
+.projects-grid {
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    text-align: center;
+    width: fit-content;
+    padding: 20px;
+    height: 100vh;
+    margin-top: 0px;
+}
+
 .stack-images img {
     height: 80px;
     width: 80px;
@@ -38,35 +78,22 @@ img:hover {
     }
 }
 
-.container.home-page {
-    display: flex;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular',
-        'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    padding: 20px;
-    justify-content: center;
-    position: relative;
-}
 
 .home-page {
     .text-zone {
-        background-color: #505050;
-        max-height: 600px;
-        padding: 20px;
-        width: 50%;
-        margin-left: 30px;
-        margin-top: 30px;
-        overflow: hidden;
+        height: 100%;
         animation: fadeIn 0.5s;
         text-align: center;
         border-radius: 20px;
-        border: 1px solid wheat;
-        box-shadow: 0px 0px 100px;
         align-self: center;
+        margin-top: 200px !important;
     }
 
     h1 {
-        font-weight: 400;
         color: rgb(190, 190, 190);
+        font-family: 'Lucida Sans', 'Lucida Sans Regular',
+            'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight: 400;
     }
 }
 

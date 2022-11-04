@@ -32,7 +32,7 @@ const Resized = () => {
                             </NavLink>
                             <NavLink exact='true' activeclassname='active' className="nav-item" to='/about'>
                                 <FontAwesomeIcon icon={faUser} color='#4d4d4e' />
-                                <p>About</p>
+                                <p>Projects</p>
                             </NavLink>
                             <NavLink exact='true' activeclassname='active' className="nav-item" to='/contact'>
                                 <FontAwesomeIcon icon={faEnvelope} color='#4d4d4e' />
